@@ -3,27 +3,27 @@ This repository is a hands-on exploration of point cloud manipulation and proces
 
 Key Functionalities Explored:
 
-+ **Visualization:**
+**Visualization:**
 
 - Utilize o3d.visualization.draw_geometries to effectively visualize your point cloud for initial analysis and inspection.
 
-+ **Processing:**
+**Processing:**
 
 - Voxel Downsampling: Enhance performance and simplify subsequent processing by efficiently reducing point cloud density. This is achieved by grouping points into voxels (3D cubes) and selecting a representative point from each voxel.
 
 - Vertex Normal Estimation: Calculate the normal vector at each point. This information about surface orientation facilitates tasks like lighting and shading calculations. This repository explores the open3d.geometry.vertex_normals_from_oriented_triangle_array method for normal estimation.
 
-+ **Bounding Volumes:**
+**Bounding Volumes:**
 
 - AxisAlignedBoundingBox (AABB): Create a rectangular bounding box that tightly encloses the point cloud, providing a simple yet efficient way to represent its extent.
 
 - OrientedBoundingBox (OBB): A more refined bounding volume that aligns its axes with the principal components of the point cloud, offering a more accurate representation of the data's shape.
 
-+ **Plane Segmentation:**
+**Plane Segmentation:**
 
 - Subdivide the point cloud into planar regions using techniques like RANSAC (Random Sample Consensus) or Euclidean clustering. This allows you to identify and isolate flat surfaces within the data, potentially enabling object segmentation or surface fitting tasks.
 
-+ **Surface Reconstruction:**
+**Surface Reconstruction:**
 
  Reconstruct a complete surface mesh from the point cloud data using various methods:
 
